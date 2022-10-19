@@ -1,0 +1,130 @@
+body{
+    background-color: hsl(30, 38%, 92%);
+}
+
+.mobileImg {
+    width: 90vw;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.desktopImg {
+    display: none;
+}
+
+.cardContainer {
+    background-color: #fff;
+    width: 90vw;
+    margin: 5%;
+    border-radius: 5px;
+}
+
+.infoContainer {
+    padding: 2% 6%;
+}
+
+.price {
+    display: flex;
+    justify-content: space-around;
+    width: 65%;
+    align-items: center;
+    height: 55px;
+}
+
+p {
+    font-size: 13px;
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(228, 12%, 48%);
+}
+
+.text {
+    letter-spacing: 0.5px;
+    font-size: 13px;
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(228, 12%, 48%);
+    line-height: 20px;
+}
+
+h1, h3 {
+    font-family: 'Fraunces', serif;
+}
+
+h1{
+    color:hsl(212, 21%, 14%);
+    line-height: 32px;
+}
+
+.product {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(228, 12%, 48%);
+    font-size: 12px;
+}
+
+h3 {
+    color:hsl(158, 36%, 37%);
+    font-size: 30px;
+}
+
+.oldPrice {
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: line-through;
+}
+
+.addButton {
+    color:white;
+    background-color:hsl(158, 36%, 37%);
+    width: 100%;
+    border-radius: 5px;
+    height: 45px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+
+.addButton > img {
+    margin: 10px;
+}
+
+.buttonContainer {
+    margin: 15px 2px;
+}
+
+@media (min-width:1440px) {
+    .mobileImg{
+        display: none;
+    }
+    .desktopImg {
+        display: block;
+        border-radius: 5px 0px 0px 5px;
+    }
+    .cardContainer {
+        display: flex;
+        width: 40vw;
+        margin: auto;
+        border-radius: 5px;
+        height: 45vh;
+        margin-top: 250px;
+    }
+    .infoContainer {
+        display: flex;
+        flex-direction: column;
+        padding:2% 4.1%;
+        justify-content: space-around;
+    }
+    h1{
+        margin: 0;
+        font-size: 2.1em;
+        line-height: 33px;
+    }
+    .text {
+        font-size: 14px;
+    }
+    .price {
+        justify-content: space-between;
+        width: 80%;
+    }
+}
